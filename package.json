@@ -20,7 +20,7 @@
     "vue-carousel": "0.18.0",
     "vue-material-design-icons": "3.4.0",
     "vue-router": "3.5.4",
-    "vuetify": "1.5.24",
+    "vuetify": "2.7.2",
     "vuex": "3.6.2",
     "vuex-persistedstate": "4.1.0",
     "x2js": "3.4.3"
