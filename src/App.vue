@@ -64,8 +64,8 @@ export default {
       this.$store.getters.getLastRefresh == null
     ) { return }
 
-    let preDate = new Date(this.$store.getters.getCurrentMonth)
-    let curDate = new Date()
+    const preDate = new Date(this.$store.getters.getCurrentMonth)
+    const curDate = new Date()
 
     if (
       (preDate.getMonth() < curDate.getMonth() ||
@@ -75,22 +75,22 @@ export default {
   },
   methods: {
     CacheMonthsData () {
-      let id = this.$store.getters.getPubId
-      let endpoint = `/publisher-info/months/${id}.json`
+      const id = this.$store.getters.getPubId
+      const endpoint = `/publisher-info/months/${id}.json`
 
       this.loading = true
 
       Api.get(endpoint)
         .then(response => {
-          let data = response.data
+          const data = response.data
 
-          let firstMonth = this.InsertCharacter(data.periods[data.periods.length - 1].value, 4, '-')
-          let currentMonth = this.InsertCharacter(
+          const firstMonth = this.InsertCharacter(data.periods[data.periods.length - 1].value, 4, '-')
+          const currentMonth = this.InsertCharacter(
             data.periods[0].value,
             4,
             '-'
           )
-          let lastRefresh = Date.now()
+          const lastRefresh = Date.now()
 
           this.$store.dispatch('saveMonthsData', {
             firstMonth,
