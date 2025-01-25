@@ -45,6 +45,11 @@
         <p>Reviews</p>
       </router-link>
 
+      <li @click="OpenLink('trends.html')">
+        <v-icon>$vuetify.icons.trendingUp</v-icon>
+        <p>Trend Analysis</p>
+      </li>
+
       <router-link
         tag="li"
         to="/settings">
@@ -131,7 +136,7 @@ export default {
       }
 
       > * {
-        height: 60px;
+        height: 54px;
         display: table-cell;
         vertical-align: middle;
       }
