@@ -153,9 +153,10 @@ export default {
               chartData.push(Debit.toFixed(2))
               chartLabels.push(monthsAbbreviations[entryDate.getMonth()] + ' ' + entryDate.getFullYear())
 
-              if (chartData.length > 6) { chartData.shift() }
+              const numberOfMonths = 12
+              if (chartData.length > numberOfMonths) { chartData.shift() }
 
-              if (chartLabels.length > 6) { chartLabels.shift() }
+              if (chartLabels.length > numberOfMonths) { chartLabels.shift() }
             }
           }
 
