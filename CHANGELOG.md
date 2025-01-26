@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.2.5] - 2025-01-25
+
+### Added
+
+- Sidebar button to open the Trend Analysis
+
+### Fixed
+
+- Color of the bars in the Trend Analysis view becomes gray for years beyond the 10th one (Mintonne#246).
+
+### Changed
+
+- Changed the range of shown months in the Revenue view from 6 to 12.
+
 ## 1.2.0
 ### Fixed
 - Requests failing on Chrome.
