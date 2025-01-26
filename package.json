@@ -9,7 +9,8 @@
     "watch:chrome": "cross-env VENDOR=chrome npm run serve",
     "build:chrome": "cross-env VENDOR=chrome npm run build && cross-env VENDOR=chrome gulp zip",
     "watch:firefox": "cross-env VENDOR=firefox npm run serve",
-    "build:firefox": "cross-env VENDOR=firefox npm run build && cross-env VENDOR=firefox gulp zip"
+    "build:firefox": "cross-env VENDOR=firefox npm run build && cross-env VENDOR=firefox gulp zip",
+    "build:all": "npm run build:chrome && npm run build:firefox"
   },
   "dependencies": {
     "axios": "0.27.2",

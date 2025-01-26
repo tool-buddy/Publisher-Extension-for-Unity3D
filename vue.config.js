@@ -32,6 +32,7 @@ module.exports = {
   lintOnSave: false,
   productionSourceMap: false,
   filenameHashing: false,
+  outputDir: process.env.VENDOR ? `dist/${process.env.VENDOR}` : 'dist',
   pages: {
     index: {
       entry: 'src/main.js',
